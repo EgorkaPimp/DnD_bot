@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fd5c3fa-5560-4158-a49e-bdd055c1e40a" name="Changes" comment="Pimp" />
+    <list default="true" id="8fd5c3fa-5560-4158-a49e-bdd055c1e40a" name="Changes" comment="Pimp first_commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,26 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_class.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;Q:/my_pet_projact/PythonProject/DnD&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.test.executor": "Run",
+    "Python.test_class.executor": "Run",
+    "Python.test_race (1).executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "Q:/my_pet_projact/PythonProject/DnD"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="Q:\my_pet_projact\PythonProject\DnD" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="Q:\my_pet_projact\PythonProject\DnD" />
       <recent name="Q:\my_pet_projact\PythonProject\DnD\data\class" />
       <recent name="Q:\my_pet_projact\PythonProject\DnD\data\races" />
       <recent name="Q:\my_pet_projact\PythonProject\DnD\data\race_not" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_class">
+  <component name="RunManager" selected="Python.test_race (1)">
     <configuration name="test_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DnD" />
       <option name="ENV_FILES" value="" />
@@ -80,6 +85,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_class.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_race (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DnD" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_race.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -112,10 +139,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test_race" />
+        <item itemvalue="Python.test_race (1)" />
         <item itemvalue="Python.test_class" />
         <item itemvalue="Python.test_race" />
-        <item itemvalue="Python.test_class" />
+        <item itemvalue="Python.test_race" />
         <item itemvalue="Python.test_class" />
       </list>
     </recent_temporary>
@@ -152,11 +179,20 @@
       <option name="project" value="LOCAL" />
       <updated>1747605485723</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Pimp first_commit">
+      <option name="closed" value="true" />
+      <created>1747606591964</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747606591964</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pimp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pimp" />
+    <MESSAGE value="Pimp first_commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pimp first_commit" />
   </component>
 </project>

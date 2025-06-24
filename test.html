@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Лист персонажа</title>
+  <link rel="stylesheet" href="test_style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form class="charsheet" id="charsheet">
+  <header>
+    <section class="charname">
+      <label for="charname">Имя персонажа</label><input name="charname" id="charname" placeholder="Character Name" />
+    </section>
+    <section class="misc">
+      <ul>
+        <li>
+          <label for="classlevel">Класс</label><input name="classlevel" placeholder="Class" />
+        </li>
+        <li>
+          <label for="background">Предистория</label><input name="background" placeholder="Background" />
+        </li>
+        <li>
+          <label for="playername">Имя игрока</label><input name="playername" placeholder="Player Name">
+        </li>
+        <li>
+          <label for="race">Раса</label><input name="race" placeholder="Race" />
+        </li>
+        <li>
+          <label for="experiencepoints">Уровень</label><input name="level" placeholder="0" />
+        </li>
+      </ul>
+    </section>
+  </header>
+  <main>
+    <section>
+      <section class="attributes">
+        <div class="scores">
+          <ul>
+            <li>
+              <div class="score">
+                <label for="Strengthscore">Сила</label><input name="Strengthscore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Strengthmod" placeholder="+0" class="statmod"/>
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Dexterityscore">Ловкость</label><input name="Dexterityscore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Dexteritymod" placeholder="+0" class=statmod/>
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Constitutionscore">Телосложение</label><input name="Constitutionscore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Constitutionmod" placeholder="+0" class="statmod"/>
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Intelligencescore">Интеллект</label><input name="Intelligencescore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Intelligencemod" placeholder="+0" class="statmod"/>
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Wisdomscore">Мудрость</label><input name="Wisdomscore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Wisdommod" placeholder="+0" />
+              </div>
+            </li>
+            <li>
+              <div class="score">
+                <label for="Charismascore">Харизма</label><input name="Charismascore" placeholder="10" class="stat"/>
+              </div>
+              <div class="modifier">
+                <input name="Charismamod" placeholder="+0" class="statmod"/>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="attr-applications">
+          <div class="proficiencybonus box">
+            <div class="label-container">
+              <label for="inspiration">Вдохновение</label>
+            </div>
+            <input name="inspiration" placeholder="" />
+          </div>
+          <div class="proficiencybonus box">
+            <div class="label-container">
+              <label for="proficiencybonus">Бонус мастерства</label>
+            </div>
+            <input name="proficiencybonus" placeholder="+2" />
+          </div>
+          <div class="saves list-section box">
+            <ul>
+              <li>
+                <label for="Strength-save">Сила</label><input name="Strength-save" placeholder="+0" type="text" /><input name="Strength-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Dexterity-save">Ловкость</label><input name="Dexterity-save" placeholder="+0" type="text" /><input name="Dexterity-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Constitution-save">Телосложение</label><input name="Constitution-save" placeholder="+0" type="text" /><input name="Constitution-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Intelligence-save">Интеллект</label><input name="Intelligence-save" placeholder="+0" type="text" /><input name="Intelligence-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Wisdom-save">Мудрость</label><input name="Wisdom-save" placeholder="+0" type="text" /><input name="Wisdom-save-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Charisma-save">Харизма</label><input name="Charisma-save" placeholder="+0" type="text" /><input name="Charisma-save-prof" type="checkbox" />
+              </li>
+            </ul>
+            <div class="label">
+              Спасбросок
+            </div>
+          </div>
+          <div class="skills list-section box">
+            <ul>
+              <li>
+                <label for="Acrobatics">Акробатика <span class="skill">(Лов)</span></label><input name="Acrobatics" placeholder="+0" type="text" /><input name="Acrobatics-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Animal Handling">Уход за животными <span class="skill">(Муд)</span></label><input name="Animal Handling" placeholder="+0" type="text" /><input name="Animal Handling-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Arcana">Магия <span class="skill">(Инт)</span></label><input name="Arcana" placeholder="+0" type="text" /><input name="Arcana-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Athletics">Атлетика <span class="skill">(Сил)</span></label><input name="Athletics" placeholder="+0" type="text" /><input name="Athletics-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Deception">Обман <span class="skill">(Хар)</span></label><input name="Deception" placeholder="+0" type="text" /><input name="Deception-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="History">История <span class="skill">(Инт)</span></label><input name="History" placeholder="+0" type="text" /><input name="History-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Insight">Проницательность <span class="skill">(Муд)</span></label><input name="Insight" placeholder="+0" type="text" /><input name="Insight-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Intimidation">Запугивание <span class="skill">(Хар)</span></label><input name="Intimidation" placeholder="+0" type="text" /><input name="Intimidation-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Investigation">Расследование <span class="skill">(Инт)</span></label><input name="Investigation" placeholder="+0" type="text" /><input name="Investigation-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Medicine">Медицина <span class="skill">(Муд)</span></label><input name="Medicine" placeholder="+0" type="text" /><input name="Medicine-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Nature">Природа <span class="skill">(Инт)</span></label><input name="Nature" placeholder="+0" type="text" /><input name="Nature-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Perception">Восприятие <span class="skill">(Муд)</span></label><input name="Perception" placeholder="+0" type="text" /><input name="Perception-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Performance">Выступление <span class="skill">(Хар)</span></label><input name="Performance" placeholder="+0" type="text" /><input name="Performance-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Persuasion">Убеждение <span class="skill">(Хар)</span></label><input name="Persuasion" placeholder="+0" type="text" /><input name="Persuasion-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Religion">Религия <span class="skill">(Инт)</span></label><input name="Religion" placeholder="+0" type="text" /><input name="Religion-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Sleight of Hand">Ловкость рук <span class="skill">(Лов)</span></label><input name="Sleight of Hand" placeholder="+0" type="text" /><input name="Sleight of Hand-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Stealth">Скрытность <span class="skill">(Лов)</span></label><input name="Stealth" placeholder="+0" type="text" /><input name="Stealth-prof" type="checkbox" />
+              </li>
+              <li>
+                <label for="Survival">Выживание <span class="skill">(Муд)</span></label><input name="Survival" placeholder="+0" type="text" /><input name="Survival-prof" type="checkbox" />
+              </li>
+            </ul>
+            <div class="label">
+              Навыки
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section>
+      <section class="combat">
+        <div class="armorclass">
+          <div>
+            <label for="ac">Класс брони</label><input name="ac" placeholder="10" type="text" />
+          </div>
+        </div>
+        <div class="initiative">
+          <div>
+            <label for="initiative">Инициатива</label><input name="initiative" placeholder="+0" type="text" />
+          </div>
+        </div>
+        <div class="speed">
+          <div>
+            <label for="speed">Скорость</label><input name="speed" placeholder="30ft" type="text" />
+          </div>
+        </div>
+
+        <!-- Copy above format for HP -->
+        <div class="armorclass">
+          <div>
+            <label for="currenthp">Очки здоровья</label><input name="currenthp" placeholder="10" type="text" />
+          </div>
+        </div>
+        <div class="initiative">
+          <div>
+            <label for="maxhp">МАХ очков здоровья</label><input name="maxhp" placeholder="10" type="text" />
+          </div>
+        </div>
+        <div class="speed">
+          <div>
+            <label for="temphp">Временное здоровье</label><input name="temphp" placeholder="0" type="text" />
+          </div>
+        </div>
+        </div>
+        <div class="deathsaves">
+          <div>
+            <div class="label">
+              <label>Броски на смерть</label>
+            </div>
+            <div class="marks">
+              <div class="deathsuccesses">
+                <label>Успех</label>
+                <div class="bubbles">
+                  <input name="deathsuccess1" type="checkbox" />
+                  <input name="deathsuccess2" type="checkbox" />
+                  <input name="deathsuccess3" type="checkbox" />
+                </div>
+              </div>
+              <div class="deathfails">
+                <label>Провал</label>
+                <div class="bubbles">
+                  <input name="deathfail1" type="checkbox" />
+                  <input name="deathfail2" type="checkbox" />
+                  <input name="deathfail3" type="checkbox" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="otherprofs box textblock">
+          <label for="otherprofs">Дополнительная информация</label><textarea name="otherprofs"></textarea>
+        </div>
+    </section>
+    <section>
+      <section class="flavor">
+        <div class="personality">
+          <label for="defenses">Место для записи</label><textarea name="defenses"></textarea>
+        </div>
+      </section>
+      <div class="passive-perception box">
+        <div class="label-container">
+          <label for="passiveperception">Пассивная проницательность</label>
+        </div>
+        <input name="passiveperception" placeholder="10" />
+      </div>
+      <div class="passive-perception box">
+        <div class="label-container">
+          <label for="passiveinsight">Пассивное восприятие</label>
+        </div>
+        <input name="passiveinsight" placeholder="10" />
+      </div>
+      <div class="passive-perception box">
+        <div class="label-container">
+          <label for="passiveinvestigation">Пассивный интеллект</label>
+        </div>
+        <input name="passiveinvestigation" placeholder="10" />
+      </div>
+    </section>
+
+  </main>
+
+  <header>
+    <section class="attacksandspellcasting" id="spellslots">
+      <div>
+        <label>Ячейки заклинаний</label>
+        <table>
+          <thead>
+            <tr>
+              <th>Уровень</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Максимум</td>
+              <td><input name="spellslotsmax1" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax2" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax3" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax4" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax5" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax6" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax7" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax8" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax9" type="text" placeholder=""/></td>
+            </tr>
+            <tr>
+              <td>Потрачено</td>
+              <td><input name="spellslotsmax1" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax2" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax3" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax4" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax5" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax6" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax7" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax8" type="text" placeholder=""/></td>
+              <td><input name="spellslotsmax9" type="text" placeholder=""/></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </header>
+
+  <header>
+      <section class="attacksandspellcasting">
+          <div>
+            <label>Атаки и заклинания</label>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    Название
+                  </th>
+                  <th>
+                    Бонус к атаке
+                  </th>
+                  <th>
+                    Урон/Тип урона
+                  </th>
+                  <th colspan="2">
+                    Описание
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="atack"><input name="attacks" type="text" placeholder=""/></td>
+                  <td id="atack"><input name="attacks" type="text" placeholder=""/></td>
+                  <td id="atack"><input name="attacks" type="text" placeholder=""/></td>
+                  <td id="atack"><input name="attacks" type="text" placeholder=""/></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </section>
+  </header>
+
+</form>
+</body>
+</html>

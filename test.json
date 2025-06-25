@@ -1,0 +1,68 @@
+{
+    
+"cahr_name": "",
+"player_name": "",
+"class": "",
+"race": "",
+"lavel": "",
+"background": "",
+    
+"ability_character": {
+    "strength": 10,
+    "dexterity": 10,
+    "constitution": 10,
+    "intelligence": 10,
+    "wisdom": 10,
+    "charisma": 10
+},
+"mod_character": {
+    "strength": 0,
+    "dexterity": 0,
+    "constitution": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "charisma": 0
+},
+"bonus_master": 0,
+"ability_scils": {
+    "Acrobatics" : 0,
+    "Animal_Handling": 0,
+    "Arcana" : 0,
+    "Athletics" : 0,
+    "Deception" : 0,
+    "History" : 0,
+    "Insight" : 0,
+    "Intimidation" : 0,
+    "Investigation" : 0,
+    "Medicine" : 0,
+    "Nature" : 0,
+    "Perception" : 0,
+    "Performance" : 0,
+    "Persuasion" : 0,
+    "Religion" : 0,
+    "Sleight_of_Hand"  : 0,
+    "Stealth" : 0,
+    "Survival" : 0
+},
+    
+"Armor_Class": 0,
+"initiative": 0,
+"Speed": 0,
+    
+"additeonly": [],
+    
+"block_spel": {
+    "l_1": 0,
+    "l_2": 0,
+    "l_3": 0,
+    "l_4": 0,
+    "l_5": 0,
+    "l_6": 0,
+    "l_7": 0,
+    "l_8": 0,
+    "l_9": 0
+},
+    
+"atack_spel": []
+}
+

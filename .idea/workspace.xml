@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fd5c3fa-5560-4158-a49e-bdd055c1e40a" name="Changes" comment="Pimp add_readme">
       <change afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hendler_comand.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/token_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -62,7 +63,7 @@
     "Python.test_race.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "tg__bot",
+    "git-widget-placeholder": "tg__bot__db",
     "last_opened_file_path": "Q:/my_pet_projact/PythonProject/DnD"
   }
 }]]></component>

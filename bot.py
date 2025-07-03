@@ -8,10 +8,11 @@ import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
-
+# Логирование в релизной версии
 # logging.basicConfig(filename='bot.log', level=logging.DEBUG,
 #                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
+# Тестовое логирование
 logging.basicConfig(filename='test_bot.log', level=logging.DEBUG, filemode='w',
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 

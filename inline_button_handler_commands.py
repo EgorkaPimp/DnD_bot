@@ -7,6 +7,6 @@ def start_inline():
                               callback_data='reg')],
 
         [InlineKeyboardButton(text="My_Git 😺",
-                              url='https://github.com/EgorkaPimp')]
+                              url='https://github.com/EgorkaPimp/DnD_bot')]
     ]
     return InlineKeyboardMarkup(inline_keyboard=inline_kb_list)

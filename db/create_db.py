@@ -31,9 +31,9 @@ def init_db():
     cursor.execute('''
                 CREATE TABLE IF NOT EXISTS spell (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    number_spell INTEGER,
                     spell_en TEXT,
-                    spell_ru TEXT
+                    spell_ru TEXT,
+                    url TEXT
                 )
             ''')
     conn.commit()

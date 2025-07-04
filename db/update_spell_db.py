@@ -19,11 +19,12 @@ def spell_data_for_db():
         name_en = contents[number].split('.')[0].replace(" ", "_")
         data = open_json(contents[number])
         name_ru = data['name_ru'].replace(' ', '_')
+        url_spell = data['url']
         if check_spell(name_en):
             continue
         else:
             #logging.INFO(f'Add spell: {number}-{name_en}-{name_ru}')
-            update_spell(number+1, name_en, name_ru)
+            update_spell(name_en, name_ru, url_spell)
 
   except FileNotFoundError:
     print(f"Ошибка: Директория '{directory_path}' не найдена.")
@@ -32,12 +33,12 @@ def spell_data_for_db():
   except Exception as e:
     print(f"Произошла ошибка: {e}")
 
-def update_spell(number, name_en, name_ru):
+def update_spell(name_en, name_ru, url_spell):
     conn, cursor = db_con()
     cursor.execute(
-        "INSERT INTO spell (number_spell, spell_en, spell_ru)"
+        "INSERT INTO spell (spell_en, spell_ru, url)"
                            "VALUES (?, ?, ?)",
-                           (number, name_en, name_ru)
+                           (name_en, name_ru, url_spell)
     )
     conn.commit()
 

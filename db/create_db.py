@@ -37,3 +37,13 @@ def init_db():
                 )
             ''')
     conn.commit()
+
+    cursor.execute('''
+                    CREATE TABLE IF NOT EXISTS user_character (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        user_token INTEGER UNIQUE,
+                        name_character TEXT,
+                        name_json TEXT
+                    )
+                ''')
+    conn.commit()

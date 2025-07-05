@@ -13,8 +13,6 @@ from aiogram.filters import Command
 #                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 # Тестовое логирование
-logging.basicConfig(filename='test_bot.log', level=logging.DEBUG, filemode='w',
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 logging.basicConfig(level=logging.INFO)
 my_token = read_file()
@@ -22,6 +20,7 @@ my_token = read_file()
 async def main():
     bot = Bot(token=my_token)
     dp = Dispatcher()
+
 
     from hendler_command import handlers_commands
     await handlers_commands(dp)

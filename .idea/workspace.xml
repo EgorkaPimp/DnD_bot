@@ -8,6 +8,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/response_to_handlers_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/response_to_handlers_commands.py" afterDir="false" />
     </list>
+    <list default="true" id="8fd5c3fa-5560-4158-a49e-bdd055c1e40a" name="Changes" comment="Pimp add_readme">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_postgres/DB_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_postgres/InitDBClass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_postgres/create_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/DB_connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/create_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/test_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/update_spell_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_postgres/update_spell_db.py" afterDir="false" />
+    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

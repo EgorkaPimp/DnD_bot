@@ -36,3 +36,20 @@
    - Подключеение к db
 3. update_spell_db
    - Обновление таблици заклинаний
+
+## bot
+1. bot
+   - старт бота основной файл 
+2. handlers_commands
+   - определение команды из меню 
+3. inline_button_handler_commands
+   - инлайн кнопки для команд из меню
+4. response_to_handlers_commands
+   - отвты от команд из меню
+5. token_file
+   - файл с токеном
+6. bot.log
+   - логирование в файл
+
+# Использованые модули:
+   - aiogram

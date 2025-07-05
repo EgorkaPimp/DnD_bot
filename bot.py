@@ -29,7 +29,12 @@ async def main():
     bot = Bot(token=my_token)
     dp = Dispatcher()
 
+
+
     await INIT_DB.initialize()
+    from hendler_command import handlers_commands
+    await handlers_commands(dp)
+
 
 
     await dp.start_polling(bot)

@@ -24,11 +24,11 @@ async def spell_data_for_db(conn):
             await update_spell(conn, name_en, name_ru, url_spell)
 
   except FileNotFoundError:
-    print(f"Ошибка: Директория '{directory_path}' не найдена.")
+    logging.error(f"Ошибка: Директория '{directory_path}' не найдена.")
   except PermissionError:
-    print(f"Ошибка: Нет доступа к директории '{directory_path}'.")
+    logging.error(f"Ошибка: Нет доступа к директории '{directory_path}'.")
   except Exception as e:
-    print(f"Произошла ошибка: {e}")
+    logging.error(f"Произошла ошибка: {e}")
 
 async def update_spell(conn, name_en, name_ru, url_spell):
     await conn.execute("""

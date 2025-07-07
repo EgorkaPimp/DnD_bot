@@ -2,9 +2,11 @@ import logging
 
 from aiogram.filters import Command
 from aiogram import Router
+from aiogram.fsm.context import FSMContext
 from aiogram.types import Message
 from aiogram import types
 
+from create_character import start_create_character
 from inline_button_handler_commands import start_inline
 from registration_user import reg_user_start
 
@@ -26,7 +28,11 @@ async def  cmd_start(message: types.Message):
                          )
 
 @router.message(Command("register"))
-async def cmd_register(message: types.Message):
+async def cmd_register(message: types.Message, state: FSMContext):
     logging.warning(f'Enter command \\register')
-    await reg_user_start(message.chat.id)
+    await reg_user_start(message.chat.id, state)
 
+@router.message(Command("create_character"))
+async def cmd_register(message: types.Message, state: FSMContext):
+    logging.warning(f'Enter command \\create_character')
+    await start_create_character(message.chat.id, state)

@@ -1,7 +1,8 @@
 import logging
-
+import datetime
 from aiohttp.web_middlewares import middleware
 
+from db_postgres.add_value_in_db import add_user_in_db
 from instance_bot import bot
 
 from ClassFilter import Form
@@ -21,30 +22,12 @@ async def reg_user_start(chat: int, state: FSMContext):
 @router.message(Form.waiting_for_nickname)
 async def get_nickname(message: types.Message, state: FSMContext):
     logging.warning(f'Input nickname {message.text}')
-    await state.update_data(nickname_user=message.text)
-    data = await state.get_data()
-    await message.answer(f'Спасибо теперь я буду называть тебя '
-                         f'_{data['nickname_user'].capitalize()}_'
-                         ,parse_mode="Markdown"
-                         )
+    await message.answer(f'Спасибо, теперь я буду называть тебя '
+                         f'_{message.text.capitalize()}_'
+                         ,parse_mode="Markdown")
     await state.clear()
+    await add_user_in_db(message.chat.id,
+                         message.text.lower(),
+                         message.chat.first_name,
+                         datetime.datetime.now().strftime("%Y.%m.%d"))
 
-
-
-
-
-
-
-
-
-
-
-
-
-    # Пример
-    # @dp.message(Form.waiting_for_age)
-    # async def process_age(message: types.Message, state: FSMContext):
-    #     await state.update_data(age=message.text)
-    #     data = await state.get_data()
-    #     await message.answer(f"Тебя зовут {data['name']}, тебе {data['age']} лет.")
-    #     await state.clear()  # Завершаем диалог

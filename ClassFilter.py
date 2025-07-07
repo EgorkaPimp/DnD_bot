@@ -11,3 +11,4 @@ class CallbackDataFilter(Filter):
 
 class Form(StatesGroup):
     waiting_for_nickname = State()
+    waiting_for_name_character = State()

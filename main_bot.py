@@ -1,5 +1,6 @@
 from datetime import datetime
 
+import create_character
 from db_postgres.InitDBClass import INIT_DB
 from token_file import read_file
 import asyncio
@@ -37,6 +38,7 @@ async def main():
     dp.include_router(hendler_command.router)
     dp.include_router(callback.router)
     dp.include_router(registration_user.router)
+    dp.include_router(create_character.router)
 
     await dp.start_polling(bot)
 

@@ -1,9 +1,7 @@
-import asyncio
-import datetime
 import logging
 
-from db_postgres.DB_connection import work_conn
-from db_postgres.InitDBClass import INIT_DB
+from folder_class.DB_connection import work_conn
+from folder_class.InitDBClass import INIT_DB
 
 name_db = INIT_DB.name_db
 

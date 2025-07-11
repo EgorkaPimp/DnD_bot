@@ -5,20 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd5c3fa-5560-4158-a49e-bdd055c1e40a" name="Changes" comment="Pimp add_readme">
-      <change afterPath="$PROJECT_DIR$/ValueClass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create_character.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_postgres/add_value_in_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_postgres/serch_value_in_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function_serch_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work_with_user/callback_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work_with_user/handler_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work_with_user/inline_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work_with_user/registration_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work_with_user/setting_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/work_with_user/user_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassFilter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassFilter.py" beforeDir="false" afterPath="$PROJECT_DIR$/folder_class/ClassFilter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/callback.py" beforeDir="false" afterPath="$PROJECT_DIR$/callback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_postgres/InitDBClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_postgres/InitDBClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_postgres/update_spell_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_postgres/update_spell_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_character.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_character.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_postgres/DB_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/folder_class/DB_connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_postgres/InitDBClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/folder_class/InitDBClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_postgres/add_value_in_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_postgres/add_value_in_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_postgres/create_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_postgres/create_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_postgres/serch_value_in_db.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hendler_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/hendler_command.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inline_button_handler_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/inline_button_handler_commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance_bot.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/registration_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration_user.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +76,13 @@
     "Python.function_serch_json.executor": "Run",
     "Python.main_auto_api.executor": "Run",
     "Python.main_bot.executor": "Run",
+    "Python.serch_value_in_db.executor": "Run",
     "Python.test.executor": "Run",
     "Python.test_class.executor": "Run",
     "Python.test_race (1).executor": "Run",
     "Python.test_race.executor": "Run",
+    "Python.user_db (1).executor": "Run",
+    "Python.user_search_value_in_db (1).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "tg__bot",
@@ -86,35 +94,14 @@
       <recent name="Q:\my_pet_projact\PythonProject\DnD" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="Q:\my_pet_projact\PythonProject\DnD\work_with_user" />
+      <recent name="Q:\my_pet_projact\PythonProject\DnD\class" />
+      <recent name="Q:\my_pet_projact\PythonProject\DnD\register_user" />
       <recent name="Q:\my_pet_projact\PythonProject\DnD" />
       <recent name="Q:\my_pet_projact\PythonProject\DnD\data\class" />
-      <recent name="Q:\my_pet_projact\PythonProject\DnD\data\races" />
-      <recent name="Q:\my_pet_projact\PythonProject\DnD\data\race_not" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.function_serch_json">
-    <configuration name="Dicoration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DnD" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dicoration.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.main_bot">
     <configuration name="add_value_in_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DnD" />
       <option name="ENV_FILES" value="" />
@@ -129,28 +116,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_postgres/add_value_in_db.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="auto_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DnD" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auto_api.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,13 +168,79 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="user_db (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DnD" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work_with_user" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/work_with_user/user_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="user_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DnD" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/db_postgres" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="Q:\my_pet_projact\PythonProject\DnD\work_with_user\user_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="user_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DnD" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/work_with_user" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="Q:\my_pet_projact\PythonProject\DnD\work_with_user\user_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.function_serch_json" />
         <item itemvalue="Python.main_bot" />
-        <item itemvalue="Python.add_value_in_db" />
-        <item itemvalue="Python.Dicoration" />
-        <item itemvalue="Python.auto_api" />
+        <item itemvalue="Python.user_db (1)" />
+        <item itemvalue="Python.user_db" />
+        <item itemvalue="Python.user_db" />
+        <item itemvalue="Python.function_serch_json" />
       </list>
     </recent_temporary>
   </component>

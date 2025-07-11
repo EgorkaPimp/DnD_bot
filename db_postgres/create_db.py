@@ -1,6 +1,6 @@
 import logging
 
-from db_postgres.DB_connection import work_conn, create_conn
+from folder_class.DB_connection import work_conn, create_conn
 from db_postgres.update_spell_db import spell_data_for_db
 
 

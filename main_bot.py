@@ -1,46 +1,40 @@
 from datetime import datetime
 
-import create_character
-from db_postgres.InitDBClass import INIT_DB
-from token_file import read_file
+from folder_class.InitDBClass import INIT_DB
 import asyncio
 import logging
 
-from aiogram import Bot, Dispatcher, types
-from aiogram.filters import Command
+from aiogram import Dispatcher
 
-import hendler_command, callback, registration_user
+import hendler_command,\
+    callback,\
+    work_with_user.handler_user,\
+    work_with_user.callback_user,\
+    work_with_user.registration_user,\
+    create_character
 
-from instance_bot import bot
+
+from folder_class.ClassFilter import InstanceBot, Router
+
+
 
 # Логирование в релизной версии
 # logging.basicConfig(filename='bot.log', level=logging.DEBUG,
 #                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-# Тестовое логирование
-# logging.basicConfig(
-#     filename='test_bot.log',
-#     level=logging.DEBUG,
-#     filemode='w',
-#     format='%(levelname)s - %(asctime)s - %(name)s - %(message)s')
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(asctime)s - %(name)s - %(message)s')
 
 logging.warning('Start logging')
 
-# my_token = read_file()
-# bot = Bot(token=my_token)
 dp = Dispatcher()
 
 async def main():
     await INIT_DB.initialize()
 
-    dp.include_router(hendler_command.router)
-    dp.include_router(callback.router)
-    dp.include_router(registration_user.router)
-    dp.include_router(create_character.router)
+    dp.include_router(Router.router)
 
-    await dp.start_polling(bot)
+    await dp.start_polling(InstanceBot.bot)
 
 
 if __name__ == "__main__":
